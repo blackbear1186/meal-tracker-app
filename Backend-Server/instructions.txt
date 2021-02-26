@@ -1,0 +1,6 @@
+npm init 
+npm install express
+npm install --save-dev nodemon
+npm install --save-dev @babel/core @babel/preset-env @babel/cli @babel/node
+npx babel-node server.js
+npm install mongodb
