@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import { routes } from './routes';
 import { db } from './db';
 
+
 const app = express();
 const port = 8000;
 
@@ -19,5 +20,4 @@ const start = async () => {
     console.log(`Server is listening on port ${port}`)
   })
 }
-
-start();
+ start();
