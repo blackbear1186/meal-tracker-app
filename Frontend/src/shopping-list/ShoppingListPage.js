@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ShoppingListPage = () => {
   return (
-    <h1>This is the Shopping List Page.</h1>
+    <h1>This is the Shopping List Page</h1>
   )
 }
