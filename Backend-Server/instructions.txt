@@ -3,4 +3,6 @@ npm install express
 npm install --save-dev nodemon
 npm install --save-dev @babel/core @babel/preset-env @babel/cli @babel/node
 npx babel-node server.js
+Add to package.json-> npx nodemon --exec 'npx babel-node src/server.js
+npm install body-parser
 npm install mongodb
