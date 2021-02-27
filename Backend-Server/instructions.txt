@@ -6,3 +6,5 @@ npx babel-node server.js
 Add to package.json-> npx nodemon --exec 'npx babel-node src/server.js
 npm install body-parser
 npm install mongodb
+start mongodb -> brew services start mongodb-community@4.4
+Import recipes.json to mongo -> mongoimport --db="meal-tracker" --collection="recipes" --file="recipes.json" --jsonArray

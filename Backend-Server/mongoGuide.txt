@@ -1,0 +1,17 @@
+start mongodb -> brew services start mongodb-community@4.4
+Import recipes.json to mongo -> mongoimport --db="meal-tracker" --collection="recipes" --file="recipes.json" --jsonArray
+// to see all recipes added to database
+In terminal:
+  type-> mongo
+  -> use meal-tracker
+  -> db.recipes.find({})
+
+  // make recipes searchable by user by making the name the index
+  -> db.recipes.createIndex({ name: 'text' })
+  
+  // insert new recipes via mongodb shell
+  db.meals.insert({ recipeId: '123', plannedDate: new Date () })
+  db.meals.find({})
+  db.meals.find({}).pretty()
+  db.ingredients.insert({ name: "Macaroni", amount: 2, units: "cups" })
+  db.ingredients.find({})
